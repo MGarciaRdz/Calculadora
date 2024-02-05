@@ -1,0 +1,96 @@
+body{
+    background-image: url(Imagenes/fondo.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.card {
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 0.5rem;
+    padding: 20px; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border: 5px solid white;
+    backdrop-filter: blur(5px);
+    
+
+  }
+  
+  .screen {
+    border: 5px solid white;
+    color: white;
+    grid-column: 1 / 5;
+    padding: 1.5 rem;
+    font-size: 40px;
+    text-align: right;
+    font-family: monospace;
+    backdrop-filter: blur(5px);
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .btn:hover {
+    background-color: #d0d0d0;
+    color: black;
+    transition: 0.3s;
+
+  }
+  
+  #C {
+    grid-column: span 2;
+    backdrop-filter: blur(5px);  
+    color: white;
+    }
+  
+  #delete {
+    backdrop-filter: blur(5px);
+    color: white;
+  }
+  
+  #division,
+  #multiplication, #plus,
+  #less,
+  #equal {
+    backdrop-filter: blur(5px); 
+    color: white;
+ }
+  
+  #division:hover,
+  #multiplication:hover, #plus:hover,
+  #less:hover,
+  #delete:hover, #C:hover
+  {
+    color: black;
+    transition: 0.3s;
+    background-color: green;
+  }
+
+  #equal:hover{
+    background-color: red;
+  }
+  
